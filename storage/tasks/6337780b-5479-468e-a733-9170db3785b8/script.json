@@ -1,0 +1,40 @@
+{
+    "script": "A beautiful day begins with Nature. A sunrise streaks across the dramatic skyline of mountains, casting vibrant hues on our canvas.Now, let's zoom out: a diverse forest fills the room with its ethereal sounds. Ants emerge to discuss their excellence, birds sing songs that echo far, while pollinators sway in wonder at the world of flora and fauna unfolds.Next, nights fill the valley with silence and contrast as moonlight dips its reflective lens into each crystal clear sky.Questions galore!",
+    "search_terms": [
+        "sunrise in nature",
+        "nature's embrace",
+        "plant's golden set",
+        "flowers bloom naturally",
+        "nature's activity"
+    ],
+    "params": {
+        "video_subject": "Nature",
+        "video_script": "A beautiful day begins with Nature. A sunrise streaks across the dramatic skyline of mountains, casting vibrant hues on our canvas.Now, let's zoom out: a diverse forest fills the room with its ethereal sounds. Ants emerge to discuss their excellence, birds sing songs that echo far, while pollinators sway in wonder at the world of flora and fauna unfolds.Next, nights fill the valley with silence and contrast as moonlight dips its reflective lens into each crystal clear sky.Questions galore!",
+        "video_terms": "sunrise in nature, nature's embrace, plant's golden set, flowers bloom naturally, nature's activity",
+        "video_aspect": "9:16",
+        "video_concat_mode": "random",
+        "video_transition_mode": "None",
+        "video_clip_duration": 3,
+        "video_count": 1,
+        "video_source": "pexels",
+        "video_materials": null,
+        "video_language": "",
+        "voice_name": "en-AU-NatashaNeural-Female",
+        "voice_volume": 1.0,
+        "voice_rate": 1.0,
+        "bgm_type": "random",
+        "bgm_file": "",
+        "bgm_volume": 0.2,
+        "subtitle_enabled": true,
+        "subtitle_position": "bottom",
+        "custom_position": 70.0,
+        "font_name": "MicrosoftYaHeiBold.ttc",
+        "text_fore_color": "#FFFFFF",
+        "text_background_color": true,
+        "font_size": 55,
+        "stroke_color": "#000000",
+        "stroke_width": 1.5,
+        "n_threads": 2,
+        "paragraph_number": 1
+    }
+}
