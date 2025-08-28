@@ -1,1 +1,1 @@
-web: uvicorn app.asgi:app --host 0.0.0.0 --port $PORT
+web: streamlit run webui/Main.py --server.port=$PORT --server.address=0.0.0.0
