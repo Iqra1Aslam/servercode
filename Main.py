@@ -527,10 +527,11 @@ with left_panel:
                 if "Error: " in terms:
                     st.error(tr(terms))
                 else:
-                    st.session_state["video_terms"] = ", ".join(terms)
+                    st.session_state.video_terms = ", ".join(terms)
 
         params.video_terms = st.text_area(
-            tr("Video Keywords"), value=st.session_state["video_terms"]
+            tr("Video Keywords"),
+            value=st.session_state.get("video_terms", "")
         )
 
 with middle_panel:
