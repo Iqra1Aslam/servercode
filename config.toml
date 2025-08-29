@@ -7,7 +7,7 @@ llm_provider = "ollama"
 pollinations_api_key = ""
 pollinations_base_url = "https://pollinations.ai/api/v1"
 pollinations_model_name = "openai-fast"
-ollama_base_url = "http://13.60.2.244:11434/v1"
+ollama_base_url = "http://13.60.91.127:11434/v1"
 ollama_model_name = "deepseek-r1:1.5b"
 openai_api_key = ""
 openai_base_url = ""
@@ -62,4 +62,5 @@ voice_name = "en-AU-NatashaNeural-Female"
 font_name = "MicrosoftYaHeiBold.ttc"
 text_fore_color = "#FFFFFF"
 font_size = 55
+
 
