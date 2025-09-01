@@ -1,6 +1,7 @@
 import math
 import os.path
 import re
+import glob
 from os import path
 
 from loguru import logger
@@ -205,7 +206,14 @@ def generate_final_videos(
         combined_video_paths.append(combined_video_path)
 
     return final_video_paths, combined_video_paths
-
+def clear_cache_videos():
+    cache_dir = utils.storage_dir("cache_videos")
+    for file_path in glob.glob(os.path.join(cache_dir, "*.mp4")):
+        try:
+            os.remove(file_path)
+            logger.info(f"Deleted cache video: {file_path}")
+        except Exception as e:
+            logger.warning(f"Failed to delete {file_path}: {e}")
 
 def start(task_id, params: VideoParams, stop_at: str = "video"):
     logger.info(f"start task: {task_id}, stop_at: {stop_at}")
@@ -326,6 +334,11 @@ def start(task_id, params: VideoParams, stop_at: str = "video"):
     sm.state.update_task(
         task_id, state=const.TASK_STATE_COMPLETE, progress=100, **kwargs
     )
+    # ✅ Cleanup cache after task is finished
+    try:
+        material.clear_cache_videos()
+    except Exception as e:
+        logger.warning(f"Cache cleanup failed: {e}")
     return kwargs
 
 
